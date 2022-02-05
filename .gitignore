@@ -1,0 +1,16 @@
+#Java
+*.class
+*.jar
+*.war
+*.ear
+target/
+
+#Eclipse
+.settings/
+bin/
+tmp/
+.metadata
+.classpath
+.project
+*.tmp
+

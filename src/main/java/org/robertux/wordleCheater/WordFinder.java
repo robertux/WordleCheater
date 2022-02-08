@@ -39,7 +39,7 @@ class Word {
 		if (this.matchLetters.length() != word.length()) return false;
 		
 		logger.debug("matchLetters: {} word to match: {}", this.matchLetters, word.toUpperCase());
-		for (int i = 0; i < matchLetters.length() - 1; i++) {
+		for (int i = 0; i < matchLetters.length(); i++) {
 			if (Character.isUpperCase(this.matchLetters.charAt(i)) && this.matchLetters.toUpperCase().charAt(i) != word.toUpperCase().charAt(i)) {
 				//Exact match(uppercase): debe tener la letra en la misma posicion
 				this.logger.debug("{} not an exact match with {}", this.matchLetters.toUpperCase().charAt(i), word.toUpperCase().charAt(i));

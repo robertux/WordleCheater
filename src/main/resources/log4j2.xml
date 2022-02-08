@@ -6,10 +6,7 @@
     </Console>
   </Appenders>
   <Loggers>
-  	<Logger name="org.robertux.wordleCheater.Main" level="TRACE"/>
-  	<Logger name="org.robertux.wordleCheater.WordFinder" level="TRACE"/>
-  	<Logger name="org.robertux.wordleCheater.WordFinderTest" level="TRACE"/>
-    <Root level="WARN">
+    <Root level="DEBUG">
       <AppenderRef ref="Console"/>
     </Root>
   </Loggers>

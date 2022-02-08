@@ -63,4 +63,12 @@ class WordFinderTest {
 		assertTrue(results.contains("cerco"), "results must contain word 'cerco'");
 		assertEquals(1, results.size(), "results must contain only one member");
 	}
+	
+	@Test
+	void testFullWord() {
+		List<String> results = this.finder.find(new Word("ANGEL"));
+		logger.debug("results: {}", Arrays.toString(results.toArray()));
+		assertTrue(results.contains("angel"), "results must contain word 'angel'");
+		assertEquals(1, results.size(), "results must contain only one member");
+	}
 }

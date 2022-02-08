@@ -27,7 +27,6 @@ public class DictionaryFecther {
 			logger.error("IOException from URL " + urlString + ": " + e.getMessage(), e);
 		}
 		
-		
 		return words;
 	}
 }

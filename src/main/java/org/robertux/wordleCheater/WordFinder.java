@@ -46,7 +46,7 @@ class Word {
 				return false;
 			}
 			if (Character.isLowerCase(this.matchLetters.charAt(i)) && this.matchLetters.toUpperCase().charAt(i) == word.toUpperCase().charAt(i)) {
-				//Partial match()lowercase: debe contener la letra pero en una posicion diferente
+				//Partial match(lowercase): debe contener la letra pero en una posicion diferente
 				this.logger.debug("Word {} contains letter {} but in wrong position", word.toUpperCase(), this.matchLetters.toUpperCase().charAt(i));
 				return false;
 			}
